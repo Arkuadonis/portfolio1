@@ -5,6 +5,7 @@ const sectBtn = document.querySelectorAll('.control')
 const allSections = document.querySelectorAll('.main-content')
 
     function PageTransitions() {
+        // for button
         for (let i = 0; i < sectBtn.length; i++) {
             sectBtn[i].addEventListener('click', function () {
                 let currentBtn = document.querySelectorAll('.active-btn');
@@ -13,16 +14,20 @@ const allSections = document.querySelectorAll('.main-content')
             })
         }
 
+        //for botton's section
         allSections[0].addEventListener('click', (e) => {
             const id = e.target.dataset.id;
             if(id){
+                //remove active from all the buttons
                 sectBtn.forEach((btn) => {
                     btn.classList.remove('active')
                 })
+                //add active for the clicked button and remove active from all other the sections
                 e.target.classList.add('active')
                 sections.forEach((section) => {
                     section.classList.remove('active')
                 })
+                //Add active to clicked section
                 const element = document.getElementById(id);
                 element.classList.add('active')
             }
