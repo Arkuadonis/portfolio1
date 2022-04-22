@@ -35,6 +35,7 @@ const allSections = document.querySelectorAll('.main-content')
     }
     PageTransitions();
 
+    
 
 
 
