@@ -206,11 +206,13 @@ section {
 .about-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  //  width: 50%;
     padding-top: 3.5rem;
     padding-bottom: 5rem;
     .right-about{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
         grid-gap: 2rem;
         .about-item{
             border: 1px solid var(--color-grey-5);
@@ -227,6 +229,7 @@ section {
                 padding: 1.5rem;
                 display: flex;
                 flex-direction: column;
+              //  height: 13rem;
                 .large-text{
                     font-size: 3rem;
                     font-weight: 700;

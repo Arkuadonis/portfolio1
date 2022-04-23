@@ -276,6 +276,8 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 2rem;
 }
 
