@@ -334,6 +334,183 @@ section {
   background-color: var(--color-grey-5);
 }
 
+.about-container .left-about {
+  padding-right: 5rem;
+}
+
+.about-container .left-about p {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-grey-1);
+}
+
+.about-container .left-about h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.about-stats {
+  padding-bottom: 4rem;
+}
+
+.about-stats .progress-bars {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.about-stats .progress-bars .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-stats .progress-bars .progress-bar .prog-title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+  color: var(--color-grey-2);
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress {
+  width: 100%;
+  height: .45rem;
+  background-color: var(--color-grey-4);
+  margin-left: 1rem;
+  position: relative;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--color-secondary);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  width: 60%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+  width: 50%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+  width: 55%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+  width: 45%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .python {
+  width: 70%;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+
+.stat-title::before {
+  content: '';
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-grey-5);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.timeline {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.timeline .timeline-item {
+  position: relative;
+  padding-left: 3rem;
+  border-left: 1px solid var(--color-grey-5);
+}
+
+.timeline .timeline-item .tl-icon {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background-color: var(--color-secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timeline .timeline-item .tl-icon i {
+  font-size: 1.3rem;
+}
+
+.timeline .timeline-item .tl-duration {
+  padding: .2rem .6rem;
+  background-color: var(--color-grey-5);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.timeline .timeline-item h5 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.timeline .timeline-item h5 span {
+  color: var(--color-grey-2);
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: none;
+}
+
+.timeline .timeline-item p {
+  color: var(--color-grey-2);
+  font-size: 1rem;
+}
+
 .btn-con {
   display: -webkit-box;
   display: -ms-flexbox;

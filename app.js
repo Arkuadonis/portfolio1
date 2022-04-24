@@ -36,8 +36,6 @@ const allSections = document.querySelectorAll('.main-content')
     PageTransitions();
 
 
-
-
 // ----------
 // Uncaught TypeError: allSections.addEventListener is not a function
 // ----------
