@@ -32,7 +32,7 @@ const allSections = document.querySelectorAll('.main-content')
                 element.classList.add('active')
             }
         })
-        // Toogle Theme
+        // Toggle Theme
         const themeBtn = document.querySelector('.theme-btn')
         themeBtn.addEventListener('click', ()=>{
             let element = document.body;
