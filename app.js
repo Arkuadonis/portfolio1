@@ -32,10 +32,16 @@ const allSections = document.querySelectorAll('.main-content')
                 element.classList.add('active')
             }
         })
+        // Toogle Theme
+        const themeBtn = document.querySelector('.theme-btn')
+        themeBtn.addEventListener('click', ()=>{
+            let element = document.body;
+            element.classList.toggle('light-mode')
+        })
     }
     PageTransitions();
 
-    
+
 // ----------
 // Uncaught TypeError: allSections.addEventListener is not a function
 // ----------
